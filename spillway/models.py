@@ -26,7 +26,7 @@ upload_to = UploadDir('data')
 
 class AbstractRasterStore(models.Model):
     """Abstract model for raster data storage."""
-    image = models.FileField(_('raster file'), upload_to='data/dem/tiles')
+    image = models.FileField(_('raster file'), upload_to='data/dem/tiles/')
     width = models.IntegerField(_('width in pixels'))
     height = models.IntegerField(_('height in pixels'))
     geom = models.PolygonField(_('raster bounding polygon'))
